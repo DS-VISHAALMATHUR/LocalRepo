@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StreamFlix</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+        header {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x1080?text=Movie+Poster');
+            background-size: cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero-content p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #e50914;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .row {
+            margin: 20px;
+        }
+        .row h2 {
+            margin-bottom: 10px;
+        }
+        .thumbnails {
+            display: flex;
+            overflow-x: scroll;
+        }
+        .thumbnail {
+            width: 200px;
+            height: 120px;
+            background-color: #333;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">StreamFlix</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">My List</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+    <div class="row">
+        <h2>Trending Now</h2>
+        <div class="thumbnails">
+            <div class="thumbnail">Movie 1</div>
+            <div class="thumbnail">Movie 2</div>
+            <div class="thumbnail">Movie 3</div>
+            <div class="thumbnail">Movie 4</div>
+            <div class="thumbnail">Movie 5</div>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Top Rated</h2>
+        <div class="thumbnails">
+            <div class="thumbnail">Show 1</div>
+            <div class="thumbnail">Show 2</div>
+            <div class="thumbnail">Show 3</div>
+            <div class="thumbnail">Show 4</div>
+            <div class="thumbnail">Show 5</div>
+        </div>
+    </div>
+</body>
+</html>
